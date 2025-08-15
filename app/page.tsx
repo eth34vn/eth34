@@ -1,16 +1,16 @@
-import Header from "@/components/header";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-4 p-4">
-      <Header />
-
+    <div className="flex flex-col gap-4 p-4 py-16">
       <div className="flex flex-col gap-4 max-w-2xl text-left mx-auto">
         <div className="flex flex-col gap-2">
-          <h1 className="text-4xl font-bold">Bảng tuyên ngôn ETH34</h1>
-          <p className="text-lg">Hoà nhập tiếng nói 34 tỉnh thành Việt Nam với Ethereum</p>
-          <p>Ethereum không chỉ là một blockchain. Ethereum là nơi mọi người có thể cùng nhau xây dựng một nền tảng tài chính mới cho kỷ nguyên internet, công bằng, minh bạch và phi tập trung. Trong thời gian vừa qua ở Việt Nam, tớ ít thấy các hoạt động dành cho cộng đồng Ethereum ngoài ETH Vietnam. So với các blockchain Layer 1 khác thì Ethereum ít có sự hiện diện, một phần vì thiếu kinh phí và chưa có ai thúc đẩy các hoạt động.</p>
-          <p>Vì thế, mình Victor Luong (hoặc cái tên online là ZxStim), khởi động một chiến dịch cộng đồng ETH34. ETH là 3 ký tự đại diện cho Ethereum thường được gán cho các cộng đồng ở nhiều nước. 34 là số tỉnh và thành phố ở Việt Nam sau sát nhập gần đây.</p>
+          <Image src="/eth34vn-full.svg" alt="ETH34" width={150} height={150} />
+          <blockquote className="text-lg border-l-4 border-red-500 pl-6 py-4 bg-red-50 rounded-r-lg italic text-gray-700">
+            Hoà nhập tiếng nói 34 tỉnh thành Việt Nam với Ethereum
+          </blockquote>
+          <p><Image className="inline-block" src="/ethereum.svg" alt="ethereum" width={20} height={20} /> <span className="font-bold underline underline-offset-4">Ethereum</span> không chỉ là một blockchain. Ethereum là nơi mọi người có thể cùng nhau xây dựng một nền tảng tài chính mới cho kỷ nguyên internet, công bằng, minh bạch và phi tập trung. Trong thời gian vừa qua ở Việt Nam, tớ ít thấy các hoạt động dành cho cộng đồng Ethereum ngoài ETH Vietnam. So với các blockchain Layer 1 khác thì Ethereum ít có sự hiện diện, một phần vì thiếu kinh phí và chưa có ai thúc đẩy các hoạt động.</p>
+          <p>Vì thế, mình Victor Luong (nickname là ZxStim), khởi động một chiến dịch cộng đồng ETH34. ETH là 3 ký tự đại diện cho Ethereum thường được gán cho các cộng đồng ở nhiều nước. 34 là số tỉnh và thành phố ở Việt Nam sau sát nhập gần đây.</p>
           <p>ETH34 có 3 mục tiêu chính sau đây:</p>
           <h2>Phổ cập kiến thức về hệ sinh thái Ethereum</h2>
           <h2>Hỗ trợ builder, sinh viên, các nhà đầu tư Ethereum</h2>
