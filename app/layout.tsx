@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const fontVietnamese = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -45,6 +46,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Script
+        defer
+        src="https://analytics.zxstim.com/script.js"
+        data-website-id="626fe135-90aa-480c-bdfe-f6f95df981ee"
+      />
       <body
         className={`${fontVietnamese.className} antialiased`}
       >
