@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex flex-col gap-4 p-4 md:px-8 md:py-8 lg:px-16 lg:py-16">
       <div className="flex flex-col gap-4 max-w-2xl text-left mx-auto">
         <div className="flex flex-col gap-2">
-          <Image src="/eth34vn-full.svg" alt="ETH34" width={150} height={150} />
+          <Image src="/eth34vn-full.svg" alt="ETH34" width={200} height={150} />
           <blockquote className="text-lg border-l-4 border-red-500 pl-4 py-4 bg-red-50 rounded-r-lg italic text-gray-700">
             Hoà nhập tiếng nói 34 tỉnh thành Việt Nam với Ethereum
           </blockquote>
@@ -21,7 +21,7 @@ export default function Home() {
           <h2 className="flex flex-row gap-2 items-center text-lg"><Building2 className="inline-block self-start pt-1 md:pt-0 lg:pt-0" />Thúc đẩy doanh nghiệp ứng dụng công nghệ Ethereum và Layer 2</h2>
           </div>
           <br />
-          <p className="text-lg"><Image className="inline-block" src="/eth34vn-full.svg" alt="ETH34" width={80} height={50} /> sẽ thực hiện các mục tiêu trên thông qua phương pháp xây dựng nội dung trên các mạng xã hội, đặc biệt là video. Đối với tớ, đây là định dạng media phù hợp nhất để kể lại những câu chuyện của cộng Ethereum tại Việt Nam tới cho bạn bè quốc tế; và ngược lại, giúp bạn bè quốc tế gửi gắm những thông điệp kết nối. Vì thế, tớ sẽ chủ động liên hệ với các hội nhóm Ethereum toàn quốc và ở nước ngoài để triển khai việc quay video.</p>
+          <p className="text-lg"><Image className="inline-block" src="/eth34vn-full.svg" alt="ETH34" width={80} height={50} /> sẽ thực hiện các mục tiêu trên thông qua phương pháp xây dựng nội dung trên các mạng xã hội, đặc biệt là <Image className="inline-block pb-1" src="/youtube.svg" alt="youtube" width={20} height={20} /> video. Đối với tớ, đây là định dạng media phù hợp nhất để kể lại những câu chuyện của cộng đồng Ethereum tại <Image className="inline-block pb-1" src="/vietnam-round.svg" alt="vietnam" width={20} height={20} /> Việt Nam tới cho bạn bè quốc tế; và ngược lại, giúp bạn bè quốc tế gửi gắm những thông điệp kết nối. Vì thế, tớ sẽ chủ động liên hệ với các hội nhóm Ethereum toàn quốc và ở nước ngoài để triển khai việc quay video.</p>
           <p className="text-lg">Cuối năm 2026, thay vì tổ chức một sự kiện như ETHVietnam những năm vừa qua. Tớ sẽ thực hiện một video đặc biệt xâu chuỗi tất cả những hoạt động của Ethereum tại Việt Nam và toàn cầu, tạo ra một điểm nhấn cuối năm, tri ân những đóng góp của mọi người.</p>
           <br />
           <p className="text-lg">Nền tảng tài chính của kỷ nguyên internet đang được xây dựng trên Ethereum. Và con người Việt Nam sẽ góp phần không nhỏ trong quá trình đổi mới đó.</p>
@@ -32,7 +32,11 @@ export default function Home() {
             Facebook ETH34
           </a>
         </Button>
+        <p className="text-sm text-gray-500">
+          Trang web này sẽ được cập nhật thêm nội dung trong thời gian tới.
+        </p>
       </div>
+      <div className="h-16" />
     </div>
   );
 }
