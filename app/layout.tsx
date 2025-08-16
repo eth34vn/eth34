@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ETH34",
     description: "Bách khoa toàn thư về Ethereum",
-    creator: "@zxstim",
+    creator: "@eth34vn",
     images: ["/eth34vn-tbn.png"],
   },
 };
