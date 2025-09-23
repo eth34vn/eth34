@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import Header from "@/components/header";
 
 const fontVietnamese = Be_Vietnam_Pro({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-
 
 export const metadata: Metadata = {
   title: "ETH34",
@@ -38,7 +38,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,10 +50,13 @@ export default function RootLayout({
         src="https://analytics.zxstim.com/script.js"
         data-website-id="626fe135-90aa-480c-bdfe-f6f95df981ee"
       />
-      <body
-        className={`${fontVietnamese.className} antialiased`}
-      >
-        {children}
+      <body className={`${fontVietnamese.className} antialiased`}>
+        <div className="min-h-screen flex flex-col justify-between p-2 md:p-8 mb-12">
+          <main className="mx-auto w-full space-y-6">
+            <Header />
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
