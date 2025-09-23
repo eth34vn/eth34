@@ -3,6 +3,7 @@ import { Be_Vietnam_Pro } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import Header from "@/components/header";
+import Footer from "@/components/footer";
 
 const fontVietnamese = Be_Vietnam_Pro({
   subsets: ["latin"],
@@ -55,6 +56,7 @@ export default function RootLayout({
           <main className="mx-auto w-full space-y-6">
             <Header />
             {children}
+            <Footer />
           </main>
         </div>
       </body>
