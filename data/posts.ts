@@ -57,7 +57,7 @@ export const posts = [
   },
   {
     id: 2,
-    section: "Các hệ sinh thái",
+    section: "Các Layer 2",
     posts: [
       {
         id: 1,
@@ -66,13 +66,23 @@ export const posts = [
       },
       {
         id: 2,
-        title: "Solana",
-        url: "/tai-lieu/solana"
+        title: "Arbitrum",
+        url: "/tai-lieu/arbitrum"
       },
       {
         id: 3,
-        title: "Polkadot",
-        url: "/tai-lieu/polkadot"
+        title: "Base",
+        url: "/tai-lieu/base"
+      },
+      {
+        id: 4,
+        title: "Optimism",
+        url: "/tai-lieu/optimism"
+      },
+      {
+        id: 5,
+        title: "Unichain",
+        url: "/tai-lieu/unichain"
       },
     ]
   },

@@ -4,12 +4,11 @@ import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark, oneLight } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { CopyButton } from '@/components/copy-button';
 import { Terminal } from 'lucide-react';
-import { useTheme } from 'next-themes';
 
 
 export default function Code({ children, className }: { children?: React.ReactNode, className?: string }) {
   
-  const { resolvedTheme } = useTheme()
+  const resolvedTheme = 'dark'
   // Extract the programming language from the className
   const match = /language-(\w+)/.exec(className || "");
 

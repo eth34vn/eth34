@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { ExternalLink, BookOpenText, Blocks, Building2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex flex-col gap-4 p-4 md:px-8 md:py-8 lg:px-16 lg:py-16">
       <div className="flex flex-col gap-4 max-w-2xl text-left mx-auto">
         <div className="flex flex-col gap-2">
+          <Link href="/" className="font-bold underline underline-offset-4 text-blue-500 dark:text-blue-400 mb-6">Về trang chủ</Link>
           <Image src="/eth34vn-full.svg" alt="ETH34" width={200} height={150} />
           <blockquote className="text-lg border-l-4 border-red-500 pl-4 py-4 bg-red-50 rounded-r-lg italic text-gray-700">
             Hoà nhập tiếng nói 34 tỉnh thành Việt Nam với Ethereum

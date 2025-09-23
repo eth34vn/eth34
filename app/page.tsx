@@ -14,15 +14,13 @@ export default function Home() {
           Lời ngỏ
         </h1>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
+          Hoà nhập tiếng nói 34 tỉnh thành Việt Nam với Ethereum. {" "}
           <Link
-            href="/"
+            href="/loi-ngo"
             className="inline-block underline underline-offset-4 text-blue-500 dark:text-blue-400"
           >
-            DeFi.vn
-          </Link>{" "}
-          là một trang web tài liệu về tài chính phi tập trung (DeFi). Trang web
-          này cung cấp thông tin về các khái niệm, công nghệ và ứng dụng của
-          DeFi, giúp người dùng hiểu rõ hơn về thế giới tài chính phi tập trung.
+            Đọc thêm
+          </Link>
         </p>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Định nghĩa
@@ -45,11 +43,11 @@ export default function Home() {
             ))}
         </div>
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-          Các hệ sinh thái
+          Các Layer 2
         </h2>
         <div className="flex flex-col gap-2">
           {posts
-            .find((post) => post.section === "Các hệ sinh thái")
+            .find((post) => post.section === "Các Layer 2")
             ?.posts.map((post) => (
               <div key={post.id} className="flex flex-row items-center gap-2">
                 <h3 className="text-sm font-semibold bg-muted p-2 rounded-full w-8 h-8 flex items-center justify-center">
@@ -64,7 +62,7 @@ export default function Home() {
               </div>
             ))}
         </div>
-        <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+        {/* <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Ứng dụng
         </h2>
         <div className="flex flex-col gap-2">
@@ -83,7 +81,7 @@ export default function Home() {
                 </Link>
               </div>
             ))}
-        </div>
+        </div> */}
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Hướng dẫn
         </h2>
