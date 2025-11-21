@@ -5,6 +5,7 @@ import VideoList from "@/components/video-list";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ExternalLink } from "lucide-react";
+import { latestVideo } from "@/data/videos";
 
 export default function Home() {
   return (
@@ -164,8 +165,8 @@ export default function Home() {
           Tiêu điểm
         </h2>
         <YoutubeIframe
-          src="https://www.youtube.com/embed/PQhiPlYi4b8?si=NbzHepgCdp21Q4JN"
-          title="Phương Án Mở Rộng Mạng Lưới Của Ethereum"
+          src={latestVideo.src}
+          title={latestVideo.title}
         />
         <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
           Danh sách
