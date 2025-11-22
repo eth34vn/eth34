@@ -40,16 +40,6 @@ export const posts = [
       },
       {
         id: 8,
-        title: "Trao đổi tài sản",
-        url: "/tai-lieu/trao-doi-tai-san"
-      },
-      {
-        id: 9,
-        title: "Tín dụng",
-        url: "/tai-lieu/tin-dung"
-      },
-      {
-        id: 10,
         title: "Từ điển",
         url: "/tai-lieu/tu-dien"
       }
@@ -61,28 +51,38 @@ export const posts = [
     posts: [
       {
         id: 1,
-        title: "Ethereum",
-        url: "/tai-lieu/ethereum"
-      },
-      {
-        id: 2,
         title: "Arbitrum",
         url: "/tai-lieu/arbitrum"
       },
       {
-        id: 3,
+        id: 2,
         title: "Base",
         url: "/tai-lieu/base"
       },
       {
-        id: 4,
+        id: 3,
         title: "Optimism",
         url: "/tai-lieu/optimism"
       },
       {
-        id: 5,
+        id: 4,
         title: "Unichain",
         url: "/tai-lieu/unichain"
+      },
+      {
+        id: 5,
+        title: "ZK Sync",
+        url: "/tai-lieu/zk-sync"
+      },
+      {
+        id: 6,
+        title: "Starknet",
+        url: "/tai-lieu/starknet"
+      },
+      {
+        id: 7,
+        title: "Aztec",
+        url: "/tai-lieu/aztec"
       },
     ]
   },
@@ -109,11 +109,6 @@ export const posts = [
         id: 5,
         title: "KyberSwap",
         url: "/tai-lieu/kyberswap"
-      },
-      {
-        id: 7,
-        title: "Hydration",
-        url: "/tai-lieu/hydration"
       },
       {
         id: 8,
@@ -149,8 +144,8 @@ export const posts = [
     posts: [
       {
         id: 1,
-        title: "Nội dung dự thảo liên quan đến Tài Sản Số",
-        url: "/tai-lieu/noi-dung-du-thao-lien-quan-den-tai-san-so"
+        title: "Nội dung nghị quyết thí điểm thị trường tài sản mã hóa",
+        url: "/tai-lieu/noi-dung-nghi-quyet-thi-truong-tai-san-ma-hoa"
       },
     ]
   },

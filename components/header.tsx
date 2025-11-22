@@ -9,7 +9,7 @@ export default function Header() {
         <Link href="/">
           <Image
             src="/eth34vn-full.svg"
-            alt="ETH34.vn full logo"
+            alt="ETHVN full logo"
             width={100}
             height={100}
           />
