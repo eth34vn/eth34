@@ -15,8 +15,8 @@ export const posts = [
       },
       {
         id: 3,
-        title: "Tài chính phi tập trung",
-        url: "/tai-lieu/tai-chinh-phi-tap-trung"
+        title: "Hợp đồng thông minh",
+        url: "/tai-lieu/hop-dong-thong-minh"
       },
       {
         id: 4,
@@ -25,21 +25,16 @@ export const posts = [
       },
       {
         id: 5,
-        title: "Hợp đồng thông minh",
-        url: "/tai-lieu/hop-dong-thong-minh"
-      },
-      {
-        id: 6,
         title: "Tổ chức tự trị phi tập trung",
         url: "/tai-lieu/to-chuc-tu-tri-phi-tap-trung"
       },
       {
-        id: 7,
+        id: 6,
         title: "Tài khoản ví",
         url: "/tai-lieu/tai-khoan-vi"
       },
       {
-        id: 8,
+        id: 7,
         title: "Từ điển",
         url: "/tai-lieu/tu-dien"
       }
@@ -71,8 +66,8 @@ export const posts = [
       },
       {
         id: 5,
-        title: "ZK Sync",
-        url: "/tai-lieu/zk-sync"
+        title: "ZKsync",
+        url: "/tai-lieu/zksync"
       },
       {
         id: 6,
