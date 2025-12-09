@@ -1,5 +1,6 @@
 import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 import Image from "next/image";
+import { BookIcon, MessageCircleReply } from 'lucide-react';
 
 export function baseOptions(): BaseLayoutProps {
   return {
@@ -17,13 +18,26 @@ export function baseOptions(): BaseLayoutProps {
     },
     links: [
       {
+        icon: <BookIcon />,
+        text: 'Tài liệu',
+        url: '/tai-lieu',
+        // secondary items will be displayed differently on navbar
+        secondary: false,
+      },
+      {
+        icon: <MessageCircleReply />,
+        text: 'Bình luận',
+        url: '/tai-lieu/binh-luan',
+        // secondary items will be displayed differently on navbar
+        secondary: false,
+      },
+      {
         type: 'icon',
         icon: <Image src="/facebook.svg" alt="Facebook" className="dark:invert" width={20} height={20} />,
         text: 'Facebook',
         url: 'https://www.facebook.com/defivn',
         // secondary items will be displayed differently on navbar
         secondary: true,
-
       },
       {
         type: 'icon',
