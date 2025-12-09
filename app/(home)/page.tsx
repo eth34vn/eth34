@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="flex flex-col">
-      <div className="flex flex-col items-center md:items-start lg:items-start justify-center h-screen px-8 md:px-16 lg:px-16">
+      <div className="flex flex-col items-center md:items-start lg:items-start justify-center h-[630px] px-8 md:px-16 lg:px-16">
         <p className="px-4 py-2 mb-16 text-sm border-2 rounded-full dark:border-blue-400 border-blue-500 w-fit text-blue-500 dark:text-blue-400">
           Một dự án cộng đồng bởi{" "}
           <Link
@@ -15,7 +15,10 @@ export default function HomePage() {
           </Link>
         </p>
         <h1 className="text-center text-3xl md:text-left md:text-5xl lg:text-left lg:text-7xl font-bold lg:w-2/3">
-          Bách khoa toàn thư về <span className="text-blue-500 dark:text-blue-400">tài chính phi tập trung</span>
+          Bách khoa toàn thư về{" "}
+          <span className="text-blue-500 dark:text-blue-400">
+            tài chính phi tập trung
+          </span>
         </h1>
         <div className="flex flex-row gap-4 mt-16">
           <Link
