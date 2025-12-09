@@ -1,8 +1,15 @@
 {
   "pages": [
     "index",
-    "tai-khoan-vi",
-    "tai-san-so"
+    "tai-khoan",
+    "tai-san-so",
+    "giao-thuc-thanh-toan",
+    "giao-thuc-trao-doi-tai-san",
+    "giao-thuc-tin-dung",
+    "giao-thuc-hop-dong-tuong-lai-vinh-vien",
+    "giao-thuc-liquid-staking",
+    "tu-dien",
+    "binh-luan"
   ],
   "defaultOpen": false
 }
