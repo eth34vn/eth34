@@ -1,0 +1,50 @@
+---
+title: Giao thức thanh toán
+description: Định nghĩa thanh toán
+---
+
+## Khái nghiệm
+
+Trong DeFi (tài chính phi tập trung), tín dụng là khả năng vay và cho vay tài sản mà không cần bên trung gian (như ngân hàng, công ty tài chính), thông qua các giao thức cho vay (lending protocol) trên blockchain. Khác với tài chính truyền thống, việc cấp tín dụng trong DeFi không dựa trên điểm tín dụng cá nhân, mà dựa trên tài sản thế chấp mà người vay gửi vào giao thức.
+
+## Tín dụng hoạt động như thế nào?
+
+### Hoạt động cho vay
+
+Khi bạn đang nắm giữ các dạng tài sản số như ETH, WBTC, v.v..., bạn có thể gửi vào một giao thức cho vay để nhận lãi ký gửi. Giao thức cho vay bản chất vận hành bởi những hợp đồng thông minh sẽ xác định một lãi suất ký gửi theo các yếu tố cung cầu của thị trường và hiển thị cho bạn. Lãi suất ký gửi thường thấp hơn lãi suất vay.
+
+Ví dụ:
+- Bạn gửi vào 10 ETH (giá ETH lúc đó $4.000 cho 1 ETH, tổng giá trị là $40.000) vào giao thức cho vay
+- Giao thức cho vay xác định lãi suất ký gửi là 5% cho mỗi năm.
+- Số lãi được tính sẽ là $40.000 * 5% = $2.000 / năm. Tuy nhiên, số lãi này sẽ được tính mỗi giây cho bạn. 
+- Bạn có thể rút tài sản thế chấp bất cứ lúc nào mà vẫn nhận được lãi suất ký gửi.
+
+### Hoạt động vay
+
+Khi người dùng có nhu cầu vay, họ sẽ gửi tài sản thế chấp vào một giao thức vay. Giao thức vay bản chất vận hành bởi những hợp đồng thông minh sẽ cung cấp một hạn mức tín dụng mà người vay có thể sử dụng. Hạn mức tín dụng phụ thuộc vào nhiều yếu tố như là tài sản thế chấp, tài sản vay, hay tình hình cung cầu thị trường hiện tại.
+
+Ví dụ: 
+- Bạn gửi vào 10 ETH (giá ETH lúc đó $4.000 cho 1 ETH, tổng giá trị là $40.000) vào giao thức vay
+- Giao thức vay xác định hạn mức tín dụng là 80%, thì bạn sẽ có hạn mức tín dụng là $32.000.
+- Với hạn mức tín dụng này, bạn có thể vay các loại tài sản khác như USDC, USDT, WBTC, v.v...
+- Ngoài ra, giao thức cũng sẽ xác định hạn mức thanh lý 85%.
+
+Trong thời gian vay, bạn sẽ phải trả lãi cho giao thức vay. Lãi suất phụ thuộc vào các yếu tố cung cầu của thị trường. Vì thế lãi suất căn bản thả nổi và giao động liên tục. Nối tiếp ví dụ trên:
+- Với hạn mức tín dụng là $32.000, bạn vay $20.000, lãi suất là 5% cho mỗi năm, 
+- Số lãi được tính sẽ là $20.000 * 5% = $1.000 / năm. Tuy nhiên, số lãi này sẽ được tính mỗi giây.
+
+Tuy nhiên, một điểm tích cực là số tài sản thế chấp của bạn cũng sẽ được tính lãi như trường hợp cho vay ở trên.
+
+Nếu giá trị tài sản thế chấp giảm quá mức (dưới ngưỡng an toàn mà giao thức quy định), giao thức vay sẽ thanh lý tài sản thế chấp để hoàn trả khoản vay. Nối tiếp ví dụ trên:
+- Giá ETH giảm từ $4.000 xuống $3.400, tổng giá trị của 10 ETH tài sản thế chấp giảm xuống $34.000, chạm ngưỡng thanh lý 85%.
+- Bạn đang vay $20.000. Tuỳ theo giao thức quy định, nhưng trường hợp đơn giản là giao thức sẽ thanh lý một số % tài sản thế chấp cộng thêm phí phạt thanh lý 5%.
+- Như vậy, giao thức sẽ thanh lý số ETH tương ứng với $20.000 * 50% = $10.000 là $10.000 (2.94117647 ETH với giá ETH $3.400) 
+- Sau đó, cộng thêm 5% phí phạt thanh lý là 2.94117647 ETH * 1.05 = 3.0882353 ETH.
+- Sau khi thanh lý, số tiền thế chấp của bạn sẽ còn 10 - 3.0882353 = 6.9117647 ETH (giá trị $23.500)
+- Hạn mức tín dụng mới của bạn sẽ là $23.500 * 80% = $18.800.
+- Bạn vẫn phải trả lãi cho giao thức vay, số lãi được tính sẽ là $18.800 * 5% = $940 / năm. Tuy nhiên, số lãi này sẽ được tính mỗi giây.
+
+
+## Trải nghiệm
+
+Dưới đây là một mô phỏng mô hình tín dụng của Aave.
