@@ -17,7 +17,7 @@ export default function HomePage() {
         <h1 className="text-center text-3xl md:text-left md:text-5xl lg:text-left lg:text-7xl font-bold lg:w-2/3">
           Bách khoa toàn thư về{" "}
           <span className="text-blue-500 dark:text-blue-400">
-            tài chính phi tập trung
+            Ethereum
           </span>
         </h1>
         <div className="flex flex-row gap-4 mt-16">
@@ -28,7 +28,7 @@ export default function HomePage() {
             Bắt đầu
           </Link>
           <a
-            href="https://www.youtube.com/@defivn"
+            href="https://www.youtube.com/@eth34vn"
             target="_blank"
             className="px-8 py-3 dark:bg-gray-800 bg-gray-300 dark:text-white text-black rounded-full w-fit lg:text-3xl hover:dark:bg-gray-700 hover:bg-gray-400"
           >
